@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Schoolbell&display=swap');
+/* CSS Variables */
+:root {
+    --primary-font: "Montserrat", sans-serif;
+    --secondary-font: "Schoolbell", cursive;
+}
+
+/* Apply global styles to all elements, resetting default spacing and ensuring consistent box-sizing */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "montserrat", sans-serif;
+}
+
+/* Apply Secondary Font to Headings */
+h1, h2, h3 {
+    font-family: var(--secondary-font);
+}
