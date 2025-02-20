@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Schoolbell&display=swap');
 /* CSS Variables */
+
 :root {
     --primary-font: "Montserrat", sans-serif;
     --secondary-font: "Schoolbell", cursive;
@@ -13,7 +14,25 @@
 	font-family: "montserrat", sans-serif;
 }
 
+/* Body Styling */
+body {
+    width: 100%;
+    height: 100vh;
+    /* Background settings */
+    background: url(../images/background.webp)#222e3a; 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    /* Flexbox properties to center content */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
 /* Apply Secondary Font to Headings */
 h1, h2, h3 {
     font-family: var(--secondary-font);
+    color: azure;
+    text-transform: uppercase;
 }
