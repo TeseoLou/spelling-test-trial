@@ -11,10 +11,13 @@
     <meta name="description" content="" />
     <title>Spell It</title>
     <!-- Preconnect to Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Schoolbell&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Schoolbell&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap 5.3 CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -29,25 +32,27 @@
     <main class="all">
       <header class="logo">
         <img src="" alt="" />
-        <h1 class="display-1">Spell It</h1>
+        <h1>Spell It</h1>
       </header>
       <!-- Input Section-->
       <section class="input">
-        <input
-          type="text"
-          name=""
-          id="input"
-          placeholder="Type your spelling here..."
-        />
+        <label for="input" class="visually-hidden">Enter your spelling:</label>
+        <div class="input-container">
+            <span id="fake-cursor" class="fake-cursor float-start">|</span>
+            <input
+                type="text"
+                id="input"
+                placeholder="Type your spelling here..."
+            />
+        </div>
       </section>
       <!-- Controls Section -->
       <section class="controls">
         <button id="btn">Previous</button>
         <button id="submit" class="btn2">Listen</button>
-        <button id="submit" class="btn3" type="submit">Submit</button>
         <button id="btn">Next</button>
+        <button id="submit" class="btn3" type="submit">Submit</button>
       </section>
-      
     </main>
     <!-- Bootstrap 5.3 Popper -->
     <script

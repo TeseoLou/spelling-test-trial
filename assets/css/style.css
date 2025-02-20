@@ -27,12 +27,78 @@ body {
     /* Flexbox properties to center content */
     display: flex; 
     justify-content: center; 
-    align-items: center; 
 }
 
-/* Apply Secondary Font to Headings */
-h1, h2, h3 {
+/* Apply Secondary Font to Heading */
+h1 {
     font-family: var(--secondary-font);
     color: azure;
-    text-transform: uppercase;
+    font-size: 100px;
+}
+
+/* Center all content within a grid container */
+.all {
+    display: grid; 
+    place-items: center; 
+    padding: 2rem; 
+}
+
+/* Logo Styling */
+.logo {
+    margin-bottom: 0.6rem; 
+}
+
+/* Adjusts logo image size */
+.logo img {
+    width: 300px; 
+}
+
+/* Container for input */
+.input-container {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center contents horizontally */
+    align-items: center; /* Center contents vertically */
+    width: 100%;
+}
+
+/* Input field styles */
+input {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    font-size: 90px;
+    font-family: var(--secondary-font);
+    color: white;
+    caret-color: white; /* Real text cursor when focused */
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    transition: border-bottom 0.3s ease-in-out;
+    text-align: center; /* Ensures text also starts in the center */
+}
+
+/* Fake blinking cursor (Centered over the input field) */
+.fake-cursor {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centering horizontally */
+    bottom: -18px; /* Adjust vertical position */
+    color: white;
+    font-size: 104px;
+    font-weight: 50;
+    opacity: 1;
+    animation: blink 1s infinite;
+    pointer-events: none; /* Prevent interaction */
+}
+
+/* Blinking animation */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
