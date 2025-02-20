@@ -1,6 +1,13 @@
 const inputField = document.getElementById("input");
 const fakeCursor = document.getElementById("fake-cursor");
 
+// Ensure fake cursor is visible initially if the input is empty
+document.addEventListener("DOMContentLoaded", () => {
+    if (inputField.value !== "") {
+        fakeCursor.style.display = "none"; // Hide cursor if input has text on page load
+    }
+});
+
 // Function to hide the fake cursor when input is focused
 inputField.addEventListener("focus", () => {
     fakeCursor.style.display = "none"; // Hide fake cursor
@@ -13,11 +20,6 @@ inputField.addEventListener("blur", () => {
     }
 });
 
-// Ensure fake cursor is visible initially if the input is empty
-document.addEventListener("DOMContentLoaded", () => {
-    if (inputField.value !== "") {
-        fakeCursor.style.display = "none"; // Hide cursor if input has text on page load
-    }
-});
+
 
 
